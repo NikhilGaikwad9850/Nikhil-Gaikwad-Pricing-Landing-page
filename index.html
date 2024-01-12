@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pricing Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Our Pricing</h1>
+    </header>
+
+    <section class="pricing-container">
+        <div class="pricing-card" id="basic">
+            <h2>Basic Plan</h2>
+            <p id="basic-price">$10/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button onclick="purchasePlan('basic')">Purchase</button>
+        </div>
+
+        <div class="pricing-card" id="pro">
+            <h2>Pro Plan</h2>
+            <p id="pro-price">$20/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+            </ul>
+            <button onclick="purchasePlan('pro')">Purchase</button>
+        </div>
+
+        <div class="pricing-card" id="premium">
+            <h2>Premium Plan</h2>
+            <p id="premium-price">$30/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <button onclick="purchasePlan('premium')">Purchase</button>
+        </div>
+    </section>
+
+    <form id="customizeForm">
+        <label for="features">Customize Your Plan:</label>
+        <input type="checkbox" id="feature1" name="feature1"> Feature 1
+        <input type="checkbox" id="feature2" name="feature2"> Feature 2
+        <input type="checkbox" id="feature3" name="feature3"> Feature 3
+        <button type="button" onclick="customizePlan()">Customize</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
