@@ -4,7 +4,7 @@ function purchasePlan(plan) {
     const selectedPlan = document.getElementById(plan);
     const price = selectedPlan.querySelector('p').textContent;
     alert(You have purchased the ${plan} plan for ${price}!);
-    // Add logic for handling the purchase, e.g., redirect to a payment page.
+    
 }
 
 function customizePlan() {
@@ -22,8 +22,7 @@ function customizePlan() {
 }
 
 function calculateCustomizedPrice() {
-    // Add your logic to calculate the customized price based on selected features.
-    // For simplicity, let's assume $5 for each selected feature.
+   
     const basePrice = getPriceOfSelectedPlan();
     const featurePrice = 5 * selectedFeatures.length;
     return basePrice + featurePrice;
